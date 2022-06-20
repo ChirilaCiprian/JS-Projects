@@ -1,2 +1,2 @@
 Readme
-![SS1](Screenshot(1).png)
+![SS1](PongGame.jpg)
