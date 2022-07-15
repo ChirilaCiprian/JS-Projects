@@ -1,0 +1,68 @@
+:root {
+  --primary: #d81e5b;
+  --secondary: #4682b4;
+  --dark: #131a26;
+  --light: #fff5ee;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--light);
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.Calculator {
+  width: 100%;
+  max-width: 400px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.display {
+  padding: 15px;
+  text-align: right;
+  background-color: var(--dark);
+}
+.display span {
+  font-size: 20px;
+  color: var(--light);
+}
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  color: var(--primary);
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button:hover {
+  opacity: 0.9;
+}
+.operators {
+  display: flex;
+}
+.operators button {
+  flex: 1 1 0%;
+  color: #fff;
+  background-color: var(--secondary);
+}
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.digits button {
+  flex: 1 1 33.33%;
+  background-color: var(--dark);
+  color: #fff;
+}
